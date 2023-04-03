@@ -16,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Download maven
+        run: sudo apt install maven
+      - run: echo "Maven installed"
+      - run: cd ${{ github.workspace }}
+      - run: mvn package
