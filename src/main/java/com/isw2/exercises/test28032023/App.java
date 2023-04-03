@@ -10,4 +10,9 @@ public class App
     {
         System.out.println( "Once I revert to an egg, I must bury myself underground for three years. There my form matures." );
     }
+
+    public String sayHello()
+    {
+        return "Once I revert to an egg, I must bury myself underground for three years. There my form matures." ;
+    }
 }
